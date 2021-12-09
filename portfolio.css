@@ -1,0 +1,217 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+/* why by writting overflow-x:hidden hide the scroll bar*/
+    font-family: 'Baloo Chettan 2';
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.nav-bar{
+    width:100%;
+    background-color: rgba(251, 238, 193, 0.76);
+    position: fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+.nav-bar div{
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.logo{
+    flex:1;
+}
+img {
+    padding:5px;
+    width: 4vw;
+  }
+.bar{
+    font-family: 'Baloo Chettan 2';
+    padding:10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.selected{
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* border-bottom: 3px solid black; */
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.HomeSection{
+    background-color: rgb(251, 238, 193);
+    width: 100vw;
+    height: 500px;
+    padding-top: 140px;
+    padding-left: 90px;
+}
+.main{
+    font-family:'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+.hand{
+    display: inline-block;
+    animation: wiggle 0.4s infinite;
+}
+@keyframes wiggle { /* key frame help us to define the animation*/
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(10deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-10deg);}
+    100%{transform: rotate(0deg);}
+}
+.about{
+    font-size: 1.313rem;
+    max-width: 700px;
+    font-family:'Raleway', sans-serif;
+    padding-bottom: 30px;
+}
+button{
+    margin: 3px;
+    height: 48px;
+    width:75px;
+    border: 2px solid #659DBD;
+    background-color:rgb(251, 238, 193) ;
+    transition: transform .2s;
+    color: #659DBD;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.skillSection{
+    padding-top: 50px;
+    width: 100vw;
+    text-align: center;
+    animation: fadeInUp;
+}
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translate3d(0,100%,0);
+    }
+    100%{
+        opacity: 1;
+        transform:none;
+    }
+}
+.skillHeading{
+    font-size: 2.188rem;
+    font-family:'Raleway', sans-serif;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.8);
+}
+.skillContent{
+    font-family: 'Baloo Chettan 2';
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.skillContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:auto;
+    max-width: 1300px;
+}
+.progress{
+    width: 300px;
+    height: 6px;
+    background-color: grey;
+    border-radius: 3px;
+    margin: auto;
+}
+.progressBar{
+ /*this is of outer div*/
+    height: 6px;
+    background-color: gold;
+    border-radius: 3px;
+}
+.liveActivityFlex{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 600px;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.miniActivity{
+    width: 200px;
+    border-top: 4px  solid rgb(182, 14, 14);
+    border-radius: 8px;
+    box-shadow: 1px 1px 7px -2px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 1px 1px 7px -2px rgba(0,0,0,0.56);
+    -moz-box-shadow: 1px 1px 7px -2px rgba(0,0,0,0.56);
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.footer{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Sen';
+    color:rgba(0, 0, 0, 0.8);
+    padding-bottom: 40px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.projectFlex{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: top;
+    padding-top: 20px;
+}
+.Projects{
+    border-radius: 15px;
+    width:520px;
+    margin: 15px;
+}
+.ProjectImg{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.ProjectHead{
+    font-size: 1.5rem;
+    font-family: 'Righteous';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    flex:1;
+    text-align: left;
+}
+.projectInfo{
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1.125rem;
+    color:rgba(0, 0, 0, 0.8);
+}
+.innerProject{
+    display: flex;
+}
+.techUse{
+    display: flex;
+    flex-wrap: wrap;
+}
+.stack{
+    padding: 7px;
+    margin: 5px;
+    min-width: 100px;
+    text-align: center;
+    font-family: 'Sen', sans-serif;
+    border-radius: 20px;
+}
